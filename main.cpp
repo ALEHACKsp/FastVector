@@ -13,8 +13,8 @@ FVector(size_t capacity) : pointer( (T*)malloc( sizeof( T ) * capacity ) ), writ
 assert( capacity != 0 );
 }
 
-FVector( const FastVector& ) = delete;
-FVector( FastVector&& ) = delete;
+FVector( const FVector& ) = delete;
+FVector( FVector&& ) = delete;
 
 ~FVector()
 {
